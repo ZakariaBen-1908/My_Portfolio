@@ -154,7 +154,7 @@ const Hero: React.FC = () => {
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <div className="absolute inset-0 bg-primary-200 dark:bg-primary-900 rounded-full transform -rotate-6 transition-transform group-hover:rotate-6"></div>
               <img
-                src="https://media.licdn.com/dms/image/v2/D4E03AQGzJo-cnmVBwg/profile-displayphoto-shrink_800_800/B4EZY_Wn3NHYAk-/0/1744819619019?e=1753315200&v=beta&t=MyO6L0OBIHUyl6rFsKiEpnAaCg0CWnc0r72CGlvQBkI"
+                src="C:\Users\ThinkPad\Downloads\Portfolio\src\components\sections\profil.jpeg"
                 alt="Zakaria Bencheikh"
                 className="relative z-10 w-full h-full object-cover rounded-full border-4 border-white dark:border-gray-800 shadow-xl transform transition-transform hover:scale-105 duration-300"
               />

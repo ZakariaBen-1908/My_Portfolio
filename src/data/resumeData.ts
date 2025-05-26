@@ -73,7 +73,7 @@ export const resumeDataEN: ResumeData = {
       date: "January 2024",
       description: "Development of an AI-powered system for detecting abandoned objects in public spaces using computer vision and deep learning techniques. The system provides real-time alerts and tracking capabilities.",
       technologies: "Python, TensorFlow, OpenCV, YOLOv8",
-      github: "https://github.com/ZakariaBen-1908/Abandoned_Object_Detection",
+      github: "https://github.com/ZakariaBen-1908/Abandoned_Object_Detection_YOLOv8",
       image: "https://img1.wsimg.com/isteam/ip/54e5fca4-ccfb-4462-ab52-41c083a6c799/abandoned-object-main.jpg"
     },
     {
@@ -81,7 +81,7 @@ export const resumeDataEN: ResumeData = {
       date: "December 2023",
       description: "Implementation of an intelligent system for real-time accident detection using computer vision and machine learning. The system can identify various types of accidents and alert emergency services.",
       technologies: "Python, PyTorch, OpenCV, YOLOv8, NVIDIA Jetson",
-      github: "https://github.com/ZakariaBen-1908/Accident-Detection",
+      github: "https://github.com/ZakariaBen-1908/Accident_Detection",
       image: "https://imagevision.ai/wp-content/uploads/2024/01/Accident-Detection-Section-2.jpg"
     },
     {
@@ -89,7 +89,7 @@ export const resumeDataEN: ResumeData = {
       date: "September 2023",
       description: "Development of an embedded system for detecting driver drowsiness and fatigue using computer vision.",
       technologies: "Raspberry Pi, Python, OpenCV, PyTorch, ResNet, CNN",
-      github: "https://github.com/ZakariaBen-1908/car-security-system",
+      github: "https://github.com/ZakariaBen-1908/Driver_Fatigue_and_Drawsiness_Detection",
       image: "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/104576/images/b6b166-a0d-26fc-16ad-f6214cada3e3_Screenshot_2023-02-09_at_12.35.16.png"
     }
   ],
