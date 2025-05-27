@@ -53,6 +53,9 @@ export default {
   'contact.form.email': 'Email',
   'contact.form.message': 'Message',
   'contact.form.submit': 'Send Message',
+  'contact.form.sending': 'Sending...',
+  'contact.form.success': 'Message sent successfully!',
+  'contact.form.error': 'Failed to send message. Please try again.',
   
   // Footer
   'footer.copyright': 'All rights reserved',

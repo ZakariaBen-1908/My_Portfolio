@@ -97,8 +97,8 @@ export const resumeDataEN: ResumeData = {
       date: "November 2023",
       description: "Implementation of various image processing techniques including image enhancement, segmentation, feature extraction, and object recognition using classical computer vision and deep learning approaches.",
       technologies: "Python, OpenCV, scikit-image, TensorFlow, PyTorch",
-      github: "https://github.com/ZakariaBen-1908/Image_Processing",
-      image: "C:\Users\ThinkPad\Downloads\Portfolio\images\Image_processing_app.png"
+      github: "https://github.com/ZakariaBen-1908/Image-Processing",
+      image: "https://www.mathworks.com/help/examples/images/win64/IdentifyObjectsUsingBlobAnalysisExample_01.png"
     }
   ],
   skills: {
@@ -192,7 +192,7 @@ export const resumeDataFR: ResumeData = {
       date: "Janvier 2024",
       description: "Développement d'un système basé sur l'IA pour la détection d'objets abandonnés dans les espaces publics utilisant la vision par ordinateur et le deep learning. Le système fournit des alertes en temps réel et des capacités de suivi.",
       technologies: "Python, TensorFlow, OpenCV, YOLOv5",
-      github: "https://github.com/ZakariaBen-1908/Abandoned_Object_Detection",
+      github: "https://github.com/ZakariaBen-1908/Abandoned_Object_Detection_YOLOv8",
       image: "https://images.pexels.com/photos/3345882/pexels-photo-3345882.jpeg"
     },
     {
@@ -200,16 +200,24 @@ export const resumeDataFR: ResumeData = {
       date: "Décembre 2023",
       description: "Implémentation d'un système intelligent pour la détection d'accidents en temps réel utilisant la vision par ordinateur et le machine learning. Le système peut identifier différents types d'accidents et alerter les services d'urgence.",
       technologies: "Python, PyTorch, OpenCV, NVIDIA Jetson",
-      github: "https://github.com/ZakariaBen-1908/Accident-Detection",
+      github: "https://github.com/ZakariaBen-1908/Accident_Detection",
       image: "https://images.pexels.com/photos/163016/crash-test-collision-test-collision-crash-163016.jpeg"
     },
     {
-      title: "Système de Sécurité Intelligent pour Voiture",
+      title: "Système de Détection de Fatigue et Somnolence",
       date: "Septembre 2023",
       description: "Développement d'un système embarqué de détection de somnolence et de fatigue du conducteur par vision par ordinateur.",
       technologies: "Raspberry Pi, Python, OpenCV",
-      github: "https://github.com/ZakariaBen-1908/car-security-system",
+      github: "https://github.com/ZakariaBen-1908/Driver_Fatigue_and_Drawsiness_Detection",
       image: "https://images.pexels.com/photos/7567445/pexels-photo-7567445.jpeg"
+    },
+    {
+      title: "Traitement d'Images Avancé",
+      date: "Novembre 2023",
+      description: "Implémentation de diverses techniques de traitement d'images incluant l'amélioration d'image, la segmentation, l'extraction de caractéristiques et la reconnaissance d'objets utilisant la vision par ordinateur classique et le deep learning.",
+      technologies: "Python, OpenCV, scikit-image, TensorFlow, PyTorch",
+      github: "https://github.com/ZakariaBen-1908/Image-Processing",
+      image: "https://www.mathworks.com/help/examples/images/win64/IdentifyObjectsUsingBlobAnalysisExample_01.png"
     }
   ],
   skills: {

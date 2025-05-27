@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { resumeDataEN, resumeDataFR } from '../../data/resumeData';
 import { PhoneIcon, MailIcon, MapPinIcon, GithubIcon, LinkedinIcon, SendIcon } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact: React.FC = () => {
   const { language, t } = useLanguage();
@@ -15,27 +16,49 @@ const Contact: React.FC = () => {
   
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
+  const [submitError, setSubmitError] = useState('');
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitMessage('');
+    setSubmitError('');
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitMessage('Message sent successfully!');
+    try {
+      await emailjs.send(
+        'service_your_service_id', // Replace with your EmailJS service ID
+        'template_your_template_id', // Replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_name: 'Zakaria Bencheikh',
+        },
+        'your_public_key' // Replace with your EmailJS public key
+      );
+      
+      setSubmitMessage(t('contact.form.success'));
       setFormData({ name: '', email: '', message: '' });
       
       // Clear success message after 3 seconds
       setTimeout(() => {
         setSubmitMessage('');
       }, 3000);
-    }, 1500);
+    } catch (error) {
+      setSubmitError(t('contact.form.error'));
+      
+      // Clear error message after 3 seconds
+      setTimeout(() => {
+        setSubmitError('');
+      }, 3000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   
   return (
@@ -187,22 +210,28 @@ const Contact: React.FC = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full flex justify-center items-center bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+                    className="w-full flex justify-center items-center bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? (
-                      <svg className="animate-spin h-5 w-5 mr-3 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <svg className="animate-spin h-5 w-5 mr-3 text-white\" xmlns="http://www.w3.org/2000/svg\" fill="none\" viewBox="0 0 24 24">
+                        <circle className="opacity-25\" cx="12\" cy="12\" r="10\" stroke="currentColor\" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
                     ) : (
                       <SendIcon className="h-5 w-5 mr-2" />
                     )}
-                    {isSubmitting ? 'Sending...' : t('contact.form.submit')}
+                    {isSubmitting ? t('contact.form.sending') : t('contact.form.submit')}
                   </button>
                   
                   {submitMessage && (
                     <div className="mt-4 p-3 bg-green-100 text-green-700 rounded-lg animate-fade-in">
                       {submitMessage}
+                    </div>
+                  )}
+                  
+                  {submitError && (
+                    <div className="mt-4 p-3 bg-red-100 text-red-700 rounded-lg animate-fade-in">
+                      {submitError}
                     </div>
                   )}
                 </div>
