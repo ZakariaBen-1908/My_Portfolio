@@ -91,6 +91,14 @@ export const resumeDataEN: ResumeData = {
       technologies: "Raspberry Pi, Python, OpenCV, PyTorch, ResNet, CNN",
       github: "https://github.com/ZakariaBen-1908/Driver_Fatigue_and_Drawsiness_Detection",
       image: "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/104576/images/b6b166-a0d-26fc-16ad-f6214cada3e3_Screenshot_2023-02-09_at_12.35.16.png"
+    },
+    {
+      title: "Advanced Image Processing",
+      date: "November 2023",
+      description: "Implementation of various image processing techniques including image enhancement, segmentation, feature extraction, and object recognition using classical computer vision and deep learning approaches.",
+      technologies: "Python, OpenCV, scikit-image, TensorFlow, PyTorch",
+      github: "https://github.com/ZakariaBen-1908/Image_Processing",
+      image: "C:\Users\ThinkPad\Downloads\Portfolio\images\Image_processing_app.png"
     }
   ],
   skills: {
