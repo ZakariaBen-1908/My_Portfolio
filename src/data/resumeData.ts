@@ -216,7 +216,7 @@ export const resumeDataFR: ResumeData = {
       date: "Novembre 2023",
       description: "Implémentation de diverses techniques de traitement d'images incluant l'amélioration d'image, la segmentation, l'extraction de caractéristiques et la reconnaissance d'objets utilisant la vision par ordinateur classique et le deep learning.",
       technologies: "Python, OpenCV, scikit-image, TensorFlow, PyTorch",
-      github: "https://github.com/ZakariaBen-1908/Image-Processing",
+      github: "https://github.com/ZakariaBen-1908/Image_Processing",
       image: "https://www.mathworks.com/help/examples/images/win64/IdentifyObjectsUsingBlobAnalysisExample_01.png"
     }
   ],
