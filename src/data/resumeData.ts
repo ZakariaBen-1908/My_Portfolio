@@ -97,7 +97,7 @@ export const resumeDataEN: ResumeData = {
       date: "November 2023",
       description: "Implementation of various image processing techniques including image enhancement, segmentation, feature extraction, and object recognition using classical computer vision and deep learning approaches.",
       technologies: "Python, OpenCV, scikit-image, TensorFlow, PyTorch",
-      github: "https://github.com/ZakariaBen-1908/Image-Processing",
+      github: "https://github.com/ZakariaBen-1908/Image_Processing",
       image:"https://www.researchgate.net/publication/349434643/figure/fig1/AS:992915715276801@1613740962067/Example-of-an-image-performed-image-processing-techniques-a-an-original-image-b-an.jpg"
     }
   ],
